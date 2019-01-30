@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/heroes/heroes",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/heroes/heroes",
+        "iconPath": "/images/basics.png",
+        "selectedIconPath": "/images/basics_cur.png",
+        "text": "工具"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/about_cur.png",
+        "text": "关于"
+      }
+    ]
+  }
+}

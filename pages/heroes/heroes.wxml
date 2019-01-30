@@ -1,0 +1,39 @@
+<!--pages/heroes/heroes.wxml-->
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content'>英雄</view>
+  </view>
+</view>
+
+<form>
+  <view class="cu-form-group">
+    <view class='title'>种族</view>
+    <picker bindchange="bindRaceChange" value="{{raceIdx}}" range="{{races}}">
+      <view class="picker">
+        {{races[raceIdx]}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>职业</view>
+    <picker bindchange="bindProChange" value="{{proIdx}}" range="{{pros}}">
+      <view class="picker">
+        {{pros[proIdx]}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>费用</view>
+    <picker bindchange="bindCostChange" value="{{costIdx}}" range="{{costs}}">
+      <view class="picker">
+        {{costs[costIdx]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="bg-white padding">
+    <view class="grid col-4 grid-square">
+      <view class="bg-img" wx:for="{{heroes}}" wx:key style="background-image:url({{item.url_full_portrait}});"></view>
+    </view>
+  </view>
+</form>
